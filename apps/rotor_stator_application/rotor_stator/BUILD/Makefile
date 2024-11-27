@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator
+CMAKE_SOURCE_DIR = /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD
+CMAKE_BINARY_DIR = /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -172,7 +172,7 @@ sfemans_lib_F: cmake_check_build_system
 
 # fast build rule for target.
 sfemans_lib_F/fast:
-	$(MAKE) -f /home/gesla/Documents/git/SFEMaNS/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/Documents/git/SFEMaNS/LIBS/CMakeFiles/sfemans_lib_F.dir/build
+	$(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build
 .PHONY : sfemans_lib_F/fast
 
 #=============================================================================
@@ -185,7 +185,7 @@ sfemans_lib_C: cmake_check_build_system
 
 # fast build rule for target.
 sfemans_lib_C/fast:
-	$(MAKE) -f /home/gesla/Documents/git/SFEMaNS/LIBS/CMakeFiles/sfemans_lib_C.dir/build.make /home/gesla/Documents/git/SFEMaNS/LIBS/CMakeFiles/sfemans_lib_C.dir/build
+	$(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/build
 .PHONY : sfemans_lib_C/fast
 
 LOCAL_SOURCES/condlim.o: LOCAL_SOURCES/condlim.F90.o

@@ -6,5 +6,5 @@ Fortran_FLAGS =
 
 Fortran_DEFINES = 
 
-Fortran_INCLUDES = -I/home/gesla/Documents/git/SFEMaNS/LIBS -I/usr/include -I/usr/lib/petscdir/petsc3.12/x86_64-linux-gnu-real/include 
+Fortran_INCLUDES = -I/home/gesla/sfe2/LIBS -I/usr/include -I/usr/lib/petscdir/petsc3.12/x86_64-linux-gnu-real/include 
 

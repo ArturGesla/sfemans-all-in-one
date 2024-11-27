@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gesla/sfe2/CTEST_SUITE
+CMAKE_SOURCE_DIR = /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gesla/sfe2/CTEST_SUITE/build
+CMAKE_BINARY_DIR = /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,27 +78,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gesla/sfe2/CTEST_SUITE/build/CMakeFiles /home/gesla/sfe2/LIBS/CMakeFiles/progress.marks
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f CMakeFiles/Makefile2 /home/gesla/sfe2/LIBS/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gesla/sfe2/CTEST_SUITE/build/CMakeFiles 0
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(CMAKE_COMMAND) -E cmake_progress_start /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles /home/gesla/sfe2/LIBS/CMakeFiles/progress.marks
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f CMakeFiles/Makefile2 /home/gesla/sfe2/LIBS/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f CMakeFiles/Makefile2 /home/gesla/sfe2/LIBS/clean
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f CMakeFiles/Makefile2 /home/gesla/sfe2/LIBS/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f CMakeFiles/Makefile2 /home/gesla/sfe2/LIBS/preinstall
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f CMakeFiles/Makefile2 /home/gesla/sfe2/LIBS/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f CMakeFiles/Makefile2 /home/gesla/sfe2/LIBS/preinstall
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f CMakeFiles/Makefile2 /home/gesla/sfe2/LIBS/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/rule:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f CMakeFiles/Makefile2 /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/rule
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f CMakeFiles/Makefile2 /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/rule
 .PHONY : /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/rule
 
 # Convenience name for target.
@@ -133,12 +122,12 @@ sfemans_lib_F: /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/rule
 
 # fast build rule for target.
 sfemans_lib_F/fast:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build
 .PHONY : sfemans_lib_F/fast
 
 # Convenience name for target.
 /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/rule:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f CMakeFiles/Makefile2 /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/rule
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f CMakeFiles/Makefile2 /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/rule
 .PHONY : /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/rule
 
 # Convenience name for target.
@@ -148,7 +137,7 @@ sfemans_lib_C: /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/rule
 
 # fast build rule for target.
 sfemans_lib_C/fast:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/build
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/build
 .PHONY : sfemans_lib_C/fast
 
 home/gesla/sfe2/SOURCES/FEMSUB/bessel.o: home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.o
@@ -157,7 +146,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/bessel.o: home/gesla/sfe2/SOURCES/FEMSUB/bessel.F
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB/bessel.i: home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.i
@@ -166,7 +155,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/bessel.i: home/gesla/sfe2/SOURCES/FEMSUB/bessel.F
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB/bessel.s: home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.s
@@ -175,7 +164,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/bessel.s: home/gesla/sfe2/SOURCES/FEMSUB/bessel.F
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/bessel.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.o: home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.o
@@ -184,7 +173,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.o: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.i: home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.i
@@ -193,7 +182,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.i: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.s: home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.s
@@ -202,7 +191,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.s: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/chaine_caractere.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.o: home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.o
@@ -211,7 +200,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.o: home/gesla/sfe2/SOURCES/FEMSUB/dir_n
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.i: home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.i
@@ -220,7 +209,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.i: home/gesla/sfe2/SOURCES/FEMSUB/dir_n
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.s: home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.s
@@ -229,7 +218,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.s: home/gesla/sfe2/SOURCES/FEMSUB/dir_n
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/dir_nodes.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.o: home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.o
@@ -238,7 +227,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.o: home/gesla/sfe2/SOURCES/FEMSUB/dyn_li
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.i: home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.i
@@ -247,7 +236,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.i: home/gesla/sfe2/SOURCES/FEMSUB/dyn_li
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.s: home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.s
@@ -256,7 +245,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.s: home/gesla/sfe2/SOURCES/FEMSUB/dyn_li
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/dyn_line.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.o: home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.o
@@ -265,7 +254,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.o: home/gesla/sfe2/SOURCES/FEMSUB/sub_pl
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.i: home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.i
@@ -274,7 +263,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.i: home/gesla/sfe2/SOURCES/FEMSUB/sub_pl
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.s: home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.s
@@ -283,7 +272,7 @@ home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.s: home/gesla/sfe2/SOURCES/FEMSUB/sub_pl
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB/sub_plot.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.o: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.o
@@ -292,7 +281,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.o: home/gesla/sfe2/SOURCES/
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.i: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.i
@@ -301,7 +290,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.i: home/gesla/sfe2/SOURCES/
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.s: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.s
@@ -310,7 +299,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.s: home/gesla/sfe2/SOURCES/
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/associate_gauss.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.o: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.o
@@ -319,7 +308,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.o: home/gesla/sfe2/SOURCES/FE
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.i: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.i
@@ -328,7 +317,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.i: home/gesla/sfe2/SOURCES/FE
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.s: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.s
@@ -337,7 +326,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.s: home/gesla/sfe2/SOURCES/FE
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.o: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.o
@@ -346,7 +335,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.o: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.i: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.i
@@ -355,7 +344,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.i: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.s: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.s
@@ -364,7 +353,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.s: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.o: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.o
@@ -373,7 +362,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.o: home/gesla/sfe2/SOURCE
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.i: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.i
@@ -382,7 +371,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.i: home/gesla/sfe2/SOURCE
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.s: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.s
@@ -391,7 +380,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.s: home/gesla/sfe2/SOURCE
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.o: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.o
@@ -400,7 +389,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.o: home/gesla/sfe2/SOUR
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.i: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.i
@@ -409,7 +398,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.i: home/gesla/sfe2/SOUR
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.s: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.s
@@ -418,7 +407,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.s: home/gesla/sfe2/SOUR
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.o: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.o
@@ -427,7 +416,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.o: home/gesla/sfe2/SOURCES/FEMS
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.i: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.i
@@ -436,7 +425,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.i: home/gesla/sfe2/SOURCES/FEMS
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.s: home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.s
@@ -445,7 +434,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.s: home/gesla/sfe2/SOURCES/FEMS
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_OBJET/type_matrix.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.o: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.o
@@ -454,7 +443,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.o: home/gesla/sfe2/
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.i: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.i
@@ -463,7 +452,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.i: home/gesla/sfe2/
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.s: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.s
@@ -472,7 +461,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.s: home/gesla/sfe2/
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.o: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.o
@@ -481,7 +470,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.o: home/gesla/sfe2/SOURCES
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.i: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.i
@@ -490,7 +479,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.i: home/gesla/sfe2/SOURCES
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.s: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.s
@@ -499,7 +488,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.s: home/gesla/sfe2/SOURCES
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.o: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.o
@@ -508,7 +497,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.o: home/gesla/sfe2/SOURC
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.i: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.i
@@ -517,7 +506,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.i: home/gesla/sfe2/SOURC
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.s: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.s
@@ -526,7 +515,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.s: home/gesla/sfe2/SOURC
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.o: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.o
@@ -535,7 +524,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.o: home/gesla/sfe2/SOURCES/
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.i: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.i
@@ -544,7 +533,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.i: home/gesla/sfe2/SOURCES/
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.s: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.s
@@ -553,7 +542,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.s: home/gesla/sfe2/SOURCES/
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.o: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.o
@@ -562,7 +551,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.o: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.i: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.i
@@ -571,7 +560,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.i: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.s: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.s
@@ -580,7 +569,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.s: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/my_util.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.o: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.o
@@ -589,7 +578,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.o: home/gesla/sfe2/SOURCES/FEMS
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.i: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.i
@@ -598,7 +587,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.i: home/gesla/sfe2/SOURCES/FEMS
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.s: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.s
@@ -607,7 +596,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.s: home/gesla/sfe2/SOURCES/FEMS
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.o: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.o
@@ -616,7 +605,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.o: home/gesla/sfe2/SOURCES/FEM
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.i: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.i
@@ -625,7 +614,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.i: home/gesla/sfe2/SOURCES/FEM
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.s: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.s
@@ -634,7 +623,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.s: home/gesla/sfe2/SOURCES/FEM
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.o: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.o
@@ -643,7 +632,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.o: home/gesla/sfe2/SOURCES/FEMSUB
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.i: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.i
@@ -652,7 +641,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.i: home/gesla/sfe2/SOURCES/FEMSUB
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.s: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.s
@@ -661,7 +650,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.s: home/gesla/sfe2/SOURCES/FEMSUB
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/solver.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.o: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.o
@@ -670,7 +659,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.o: home/gesla/sfe2/SOURCES/FEMSUB
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.i: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.i
@@ -679,7 +668,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.i: home/gesla/sfe2/SOURCES/FEMSUB
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.s: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.s
@@ -688,7 +677,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.s: home/gesla/sfe2/SOURCES/FEMSUB
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/st_csr.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.o: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.o
@@ -697,7 +686,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.o: home/gesla
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.i: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.i
@@ -706,7 +695,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.i: home/gesla
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.s: home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.s
@@ -715,7 +704,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.s: home/gesla
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.o
@@ -724,7 +713,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.o: home/gesla/sfe2/SOURCES
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.i
@@ -733,7 +722,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.i: home/gesla/sfe2/SOURCES
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.s
@@ -742,7 +731,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.s: home/gesla/sfe2/SOURCES
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.o
@@ -751,7 +740,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.o: home/gesla/sfe2/SO
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.i
@@ -760,7 +749,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.i: home/gesla/sfe2/SO
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.s
@@ -769,7 +758,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.s: home/gesla/sfe2/SO
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.o
@@ -778,7 +767,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.o: home/gesla/sfe2/SOUR
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.i
@@ -787,7 +776,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.i: home/gesla/sfe2/SOUR
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.s
@@ -796,7 +785,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.s: home/gesla/sfe2/SOUR
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.o
@@ -805,7 +794,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.o: home/gesla/sfe2/SOURCES/FEMS
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.i
@@ -814,7 +803,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.i: home/gesla/sfe2/SOURCES/FEMS
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.s
@@ -823,7 +812,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.s: home/gesla/sfe2/SOURCES/FEMS
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.o
@@ -832,7 +821,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.o: home/gesla/sfe2/SOURCES/FE
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.i
@@ -841,7 +830,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.i: home/gesla/sfe2/SOURCES/FE
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.s
@@ -850,7 +839,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.s: home/gesla/sfe2/SOURCES/FE
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.o
@@ -859,7 +848,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.o: home/gesla/sfe2/SOURCES/F
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.i
@@ -868,7 +857,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.i: home/gesla/sfe2/SOURCES/F
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.s
@@ -877,7 +866,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.s: home/gesla/sfe2/SOURCES/F
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.o
@@ -886,7 +875,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.o: home/gesla/sfe2/SOURCES
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.i
@@ -895,7 +884,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.i: home/gesla/sfe2/SOURCES
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.s
@@ -904,7 +893,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.s: home/gesla/sfe2/SOURCES
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/initialization.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.o
@@ -913,7 +902,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.o: home/gesla/sfe2/SOU
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.i
@@ -922,7 +911,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.i: home/gesla/sfe2/SOU
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.s
@@ -931,7 +920,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.s: home/gesla/sfe2/SOU
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.o
@@ -940,7 +929,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.o: home/gesla/
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.i
@@ -949,7 +938,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.i: home/gesla/
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.s
@@ -958,7 +947,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.s: home/gesla/
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.o
@@ -967,7 +956,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.o: home/gesla/
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.i
@@ -976,7 +965,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.i: home/gesla/
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.s
@@ -985,7 +974,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.s: home/gesla/
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.o
@@ -994,7 +983,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.o: home/gesla/
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.i
@@ -1003,7 +992,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.i: home/gesla/
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.s
@@ -1012,7 +1001,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.s: home/gesla/
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.o
@@ -1021,7 +1010,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.o: home/gesla/sfe2/SOU
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.i
@@ -1030,7 +1019,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.i: home/gesla/sfe2/SOU
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.s
@@ -1039,7 +1028,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.s: home/gesla/sfe2/SOU
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.o
@@ -1048,7 +1037,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.o: home/gesla/sfe2/SOURCES/F
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.i
@@ -1057,7 +1046,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.i: home/gesla/sfe2/SOURCES/F
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.s
@@ -1066,7 +1055,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.s: home/gesla/sfe2/SOURCES/F
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.o
@@ -1075,7 +1064,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.o: home/gesla/sfe2/SOURCES/FEMSUB
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.i
@@ -1084,7 +1073,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.i: home/gesla/sfe2/SOURCES/FEMSUB
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.s
@@ -1093,7 +1082,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.s: home/gesla/sfe2/SOURCES/FEMSUB
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/restart.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.o
@@ -1102,7 +1091,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.o: home/gesla/sfe2/SOURCES/FEM
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.i
@@ -1111,7 +1100,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.i: home/gesla/sfe2/SOURCES/FEM
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.s
@@ -1120,7 +1109,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.s: home/gesla/sfe2/SOURCES/FEM
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.o
@@ -1129,7 +1118,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.o: home/gesla/
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.i
@@ -1138,7 +1127,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.i: home/gesla/
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.s
@@ -1147,7 +1136,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.s: home/gesla/
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.o
@@ -1156,7 +1145,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.o: home/gesla/sfe2/SOUR
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.i
@@ -1165,7 +1154,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.i: home/gesla/sfe2/SOUR
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.s
@@ -1174,7 +1163,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.s: home/gesla/sfe2/SOUR
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.o
@@ -1183,7 +1172,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.o: home/gesla/sfe2/SOURCES/
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.i
@@ -1192,7 +1181,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.i: home/gesla/sfe2/SOURCES/
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.s
@@ -1201,7 +1190,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.s: home/gesla/sfe2/SOURCES/
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.o
@@ -1210,7 +1199,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.o: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.i
@@ -1219,7 +1208,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.i: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.s
@@ -1228,7 +1217,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.s: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.o
@@ -1237,7 +1226,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.o: home/gesla/sfe2/SOURCES/FE
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.i
@@ -1246,7 +1235,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.i: home/gesla/sfe2/SOURCES/FE
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.s
@@ -1255,7 +1244,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.s: home/gesla/sfe2/SOURCES/FE
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.o
@@ -1264,7 +1253,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.o: home/gesla/sfe2/SOUR
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.i
@@ -1273,7 +1262,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.i: home/gesla/sfe2/SOUR
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.s
@@ -1282,7 +1271,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.s: home/gesla/sfe2/SOUR
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.o
@@ -1291,7 +1280,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.o: home/gesla/sfe2/S
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.i
@@ -1300,7 +1289,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.i: home/gesla/sfe2/S
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.s
@@ -1309,7 +1298,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.s: home/gesla/sfe2/S
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.o
@@ -1318,7 +1307,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.o: home/ges
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.i
@@ -1327,7 +1316,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.i: home/ges
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.s
@@ -1336,7 +1325,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.s: home/ges
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.o
@@ -1345,7 +1334,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.o: home/gesla/sfe2/S
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.i
@@ -1354,7 +1343,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.i: home/gesla/sfe2/S
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.s
@@ -1363,7 +1352,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.s: home/gesla/sfe2/S
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.o
@@ -1372,7 +1361,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.o: home/gesla/sf
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.i
@@ -1381,7 +1370,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.i: home/gesla/sf
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.s
@@ -1390,7 +1379,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.s: home/gesla/sf
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.o
@@ -1399,7 +1388,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.o: home/gesla/sfe2
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.i
@@ -1408,7 +1397,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.i: home/gesla/sfe2
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.s
@@ -1417,7 +1406,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.s: home/gesla/sfe2
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.o
@@ -1426,7 +1415,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.o: home/gesla/sfe2
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.i
@@ -1435,7 +1424,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.i: home/gesla/sfe2
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.s
@@ -1444,7 +1433,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.s: home/gesla/sfe2
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.o
@@ -1453,7 +1442,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.o: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.i
@@ -1462,7 +1451,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.i: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.s
@@ -1471,7 +1460,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.s: home/gesla/sfe2/SOURCES/FEMSU
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.o
@@ -1480,7 +1469,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.o: home/gesla/sfe2/SOURCES/FEMSUB_
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.i
@@ -1489,7 +1478,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.i: home/gesla/sfe2/SOURCES/FEMSUB_
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.s
@@ -1498,7 +1487,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.s: home/gesla/sfe2/SOURCES/FEMSUB_
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.o
@@ -1507,7 +1496,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.o: home/gesla/sfe2/SOURCES/FEMSUB_S
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.i
@@ -1516,7 +1505,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.i: home/gesla/sfe2/SOURCES/FEMSUB_S
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.s
@@ -1525,7 +1514,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.s: home/gesla/sfe2/SOURCES/FEMSUB_S
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/tools.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.o
@@ -1534,7 +1523,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.o: home/gesla/sfe2/SOU
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.i
@@ -1543,7 +1532,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.i: home/gesla/sfe2/SOU
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.s
@@ -1552,7 +1541,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.s: home/gesla/sfe2/SOU
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.s
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.o: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.o
@@ -1561,7 +1550,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.o: home/gesla/sfe2/SOURCES/FEMSUB
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.o
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.i: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.i
@@ -1570,7 +1559,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.i: home/gesla/sfe2/SOURCES/FEMSUB
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.i
 
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.s: home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.s
@@ -1579,7 +1568,7 @@ home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.s: home/gesla/sfe2/SOURCES/FEMSUB
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/FEMSUB_SFEMaNS/verbose.F90.s
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.o: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.o
@@ -1588,7 +1577,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.o: home/gesla/sfe2/SOURCES/G
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.o
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.i: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.i
@@ -1597,7 +1586,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.i: home/gesla/sfe2/SOURCES/G
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.i
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.s: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.s
@@ -1606,7 +1595,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.s: home/gesla/sfe2/SOURCES/G
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.s
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.o: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.o
@@ -1615,7 +1604,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.o: home/gesla/sfe2/SOURCES/G
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.o
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.i: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.i
@@ -1624,7 +1613,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.i: home/gesla/sfe2/SOURCES/G
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.i
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.s: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.s
@@ -1633,7 +1622,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.s: home/gesla/sfe2/SOURCES/G
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.s
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.o: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.o
@@ -1642,7 +1631,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.o: home/gesla/sfe2/SOURCES/G
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.o
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.i: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.i
@@ -1651,7 +1640,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.i: home/gesla/sfe2/SOURCES/G
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.i
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.s: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.s
@@ -1660,7 +1649,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.s: home/gesla/sfe2/SOURCES/G
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.s
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.o: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.o
@@ -1669,7 +1658,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.o: home/gesla/sfe2/SOURC
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.o
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.i: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.i
@@ -1678,7 +1667,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.i: home/gesla/sfe2/SOURC
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.i
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.s: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.s
@@ -1687,7 +1676,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.s: home/gesla/sfe2/SOURC
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.s
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.o: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.o
@@ -1696,7 +1685,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.o: home/gesla/sfe2/SO
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.o
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.i: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.i
@@ -1705,7 +1694,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.i: home/gesla/sfe2/SO
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.i
 
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.s: home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.s
@@ -1714,7 +1703,7 @@ home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.s: home/gesla/sfe2/SO
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.s
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.o: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.o
@@ -1723,7 +1712,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.o: home/gesl
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.o
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.i: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.i
@@ -1732,7 +1721,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.i: home/gesl
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.i
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.s: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.s
@@ -1741,7 +1730,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.s: home/gesl
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.s
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.o: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.o
@@ -1750,7 +1739,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.o: home/gesla/sfe2/SOU
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.o
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.i: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.i
@@ -1759,7 +1748,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.i: home/gesla/sfe2/SOU
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.i
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.s: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.s
@@ -1768,7 +1757,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.s: home/gesla/sfe2/SOU
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.s
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.o: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.o
@@ -1777,7 +1766,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.o: home/gesla/sf
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.o
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.i: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.i
@@ -1786,7 +1775,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.i: home/gesla/sf
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.i
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.s: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.s
@@ -1795,7 +1784,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.s: home/gesla/sf
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.s
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.o: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.o
@@ -1804,7 +1793,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.o: home/g
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.o
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.i: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.i
@@ -1813,7 +1802,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.i: home/g
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.i
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.s: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.s
@@ -1822,7 +1811,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.s: home/g
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.s
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.o: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.o
@@ -1831,7 +1820,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.o: home/g
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.o
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.i: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.i
@@ -1840,7 +1829,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.i: home/g
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.i
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.s: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.s
@@ -1849,7 +1838,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.s: home/g
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.s
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.o: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.o
@@ -1858,7 +1847,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.o: home/gesla/sfe2/SOUR
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.o
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.i: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.i
@@ -1867,7 +1856,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.i: home/gesla/sfe2/SOUR
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.i
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.s: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.s
@@ -1876,7 +1865,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.s: home/gesla/sfe2/SOUR
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.s
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.o: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.o
@@ -1885,7 +1874,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.o: home/gesla/sfe2/SOUR
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.o
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.i: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.i
@@ -1894,7 +1883,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.i: home/gesla/sfe2/SOUR
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.i
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.s: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.s
@@ -1903,7 +1892,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.s: home/gesla/sfe2/SOUR
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.s
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.o: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.o
@@ -1912,7 +1901,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.o: home/gesla/sfe2/SOUR
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.o
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.i: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.i
@@ -1921,7 +1910,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.i: home/gesla/sfe2/SOUR
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.i
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.s: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.s
@@ -1930,7 +1919,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.s: home/gesla/sfe2/SOUR
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.s
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.o: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.o
@@ -1939,7 +1928,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.o: home/gesla/sfe2/SOUR
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.o
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.i: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.i
@@ -1948,7 +1937,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.i: home/gesla/sfe2/SOUR
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.i
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.s: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.s
@@ -1957,7 +1946,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.s: home/gesla/sfe2/SOUR
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.s
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.o: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.o
@@ -1966,7 +1955,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.o: home/gesla/sfe2/SOUR
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.o
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.i: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.i
@@ -1975,7 +1964,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.i: home/gesla/sfe2/SOUR
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.i
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.s: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.s
@@ -1984,7 +1973,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.s: home/gesla/sfe2/SOUR
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.s
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.o: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.o
@@ -1993,7 +1982,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.o: home/gesla/sfe2/SOUR
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.o
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.i: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.i
@@ -2002,7 +1991,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.i: home/gesla/sfe2/SOUR
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.i
 
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.s: home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.s
@@ -2011,7 +2000,7 @@ home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.s: home/gesla/sfe2/SOUR
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.s
 
 home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.o: home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.o
@@ -2020,7 +2009,7 @@ home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.o: home/gesla/sfe2/SOURCES/
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.o
 .PHONY : home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.o
 
 home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.i: home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.i
@@ -2029,7 +2018,7 @@ home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.i: home/gesla/sfe2/SOURCES/
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.i
 .PHONY : home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.i
 
 home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.s: home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.s
@@ -2038,7 +2027,7 @@ home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.s: home/gesla/sfe2/SOURCES/
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_C.dir/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.s
 .PHONY : home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.s
 
 home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.o: home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.o
@@ -2047,7 +2036,7 @@ home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.o: home/gesla/sfe2/SOURCES/
 
 # target to build an object file
 home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.o:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.o
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.o
 .PHONY : home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.o
 
 home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.i: home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.i
@@ -2056,7 +2045,7 @@ home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.i: home/gesla/sfe2/SOURCES/
 
 # target to preprocess a source file
 home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.i:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.i
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.i
 .PHONY : home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.i
 
 home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.s: home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.s
@@ -2065,7 +2054,7 @@ home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.s: home/gesla/sfe2/SOURCES/
 
 # target to generate assembly for a file
 home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.s:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.s
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(MAKE) -f /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make /home/gesla/sfe2/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.s
 .PHONY : home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.s
 
 # Help Target
@@ -2076,7 +2065,6 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
 	@echo "... sfemans_lib_F"
 	@echo "... sfemans_lib_C"
 	@echo "... home/gesla/sfe2/SOURCES/FEMSUB/bessel.o"
@@ -2303,6 +2291,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gesla/sfe2/CTEST_SUITE/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

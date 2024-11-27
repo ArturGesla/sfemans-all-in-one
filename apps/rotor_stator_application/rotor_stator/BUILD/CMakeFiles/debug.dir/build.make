@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator
+CMAKE_SOURCE_DIR = /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD
+CMAKE_BINARY_DIR = /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD
 
 # Utility rule file for debug.
 
@@ -54,9 +54,9 @@ CMAKE_BINARY_DIR = /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_applicati
 include CMakeFiles/debug.dir/progress.make
 
 CMakeFiles/debug:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Switch CMAKE_BUILD_TYPE to Debug"
-	/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator
-	/usr/bin/cmake --build /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD --target all
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Switch CMAKE_BUILD_TYPE to Debug"
+	/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator
+	/usr/bin/cmake --build /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD --target all
 
 debug: CMakeFiles/debug
 debug: CMakeFiles/debug.dir/build.make
@@ -73,6 +73,6 @@ CMakeFiles/debug.dir/clean:
 .PHONY : CMakeFiles/debug.dir/clean
 
 CMakeFiles/debug.dir/depend:
-	cd /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles/debug.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles/debug.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/debug.dir/depend
 

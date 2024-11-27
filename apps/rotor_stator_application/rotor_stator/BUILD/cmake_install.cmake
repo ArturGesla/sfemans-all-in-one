@@ -1,4 +1,4 @@
-# Install script for directory: /home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator
+# Install script for directory: /home/gesla/sfe2/apps/rotor_stator_application/rotor_stator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/gesla/Documents/git/SFEMaNS/LIBS/cmake_install.cmake")
+  include("/home/gesla/sfe2/LIBS/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/gesla/sfe2/apps/rotor_stator_application/rotor_stator/BUILD/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
