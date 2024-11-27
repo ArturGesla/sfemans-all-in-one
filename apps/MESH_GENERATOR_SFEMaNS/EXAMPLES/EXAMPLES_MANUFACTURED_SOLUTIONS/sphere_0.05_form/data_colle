@@ -1,0 +1,9 @@
+.true. ! false pr unformatted, true pr formatted
+3  ! nb_sd
+. FEM.circle_1
+1 ! nb interface a conserver
+2   ! index de l'interface
+. FEM.circle_2
+1 ! nb interface a conserver
+3   ! index de l'interface
+. FEM.circle_3

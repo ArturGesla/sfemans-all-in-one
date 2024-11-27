@@ -1,0 +1,9 @@
+.t.
+3  ! nb_sd
+. FEM.rect_1
+1      ! nb of interfaces to keep
+5      ! index of interfaces
+. FEM.rect_2
+1      ! nb of interfaces to keep
+6      ! index of interfaces
+. FEM.rect_3

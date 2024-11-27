@@ -1,0 +1,2 @@
+/home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/test/build/CMakeFiles/rebuild_cache.dir
+/home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/test/build/CMakeFiles/edit_cache.dir

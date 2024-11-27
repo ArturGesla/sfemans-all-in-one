@@ -1,0 +1,7 @@
+.f.  !    .t.= formatted  .f.=unformatted
+1 ! nb of meshes to glue
+. FEM.andrea
+0
+0
+. FEM.stuff
+

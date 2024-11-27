@@ -1,0 +1,6 @@
+# The fortran modules provided by this target.
+provides
+ boundary_generic_module@boundary_generic.smod
+ test_vks_tm87.mod
+ user_data.mod
+ user_data_module.mod

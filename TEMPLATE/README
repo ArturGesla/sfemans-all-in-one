@@ -1,0 +1,72 @@
+==================================================================
+!       Install Petsc
+==================================================================
+Intall or have somebody else install Petsc for you
+
+1) Have look at
+http://www.mcs.anl.gov/petsc/download/index.html
+
+2) Then do
+wget http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-3.7.2.tar.gz
+gunzip and untar the file
+
+3) Export the environment variables
+cd petsc-3.7.2
+export PETSC_DIR=$PWD
+export PETSC_ARCH=linux-gnu-c
+
+4) Go to petsc-3.7.2 and configure Petsc
+./configure --configModules=PETSc.Configure --optionsModule=PETSc.compilerOptions --download-f-blaslapack=1 --with-shared-libraries=1 --download-hypre=1 --download-mumps=1 --download-spooles=1 --download-scalapack=1 --download-metis=1 --download-parmetis=1 --download-blacs=1 --with-debugging=0 --with-x=0
+
+5) make all
+
+6) make test
+
+7) Done
+
+
+==================================================================
+!       Check installation
+==================================================================
+
+1) cd SFEMaNS/CTEST_SUITE
+
+2) read README in CTEST_SUITE
+
+
+==================================================================
+!       Make your own SFEMaNS applications
+==================================================================
+
+1) Create you own application (Not in SFEMaNS) 
+	mkdir MY_APPLICATIONS_SFEMaNS
+	cd MY_APPLICATIONS_SFEMaNS
+
+2) Create an application from the template
+	cp $SFEMaNS_DIR/TEMPLATE/* .
+
+3) Rename and update variables_template.cmake
+	mv variables_template.cmake variables.cmake
+
+4) mkdir LOCAL_SOURCES
+   mv *.F90 LOCAL_SOURCES
+   Update the main, condlim, read_user_data in the directory LOCAL_SOURCES
+   (see online documentation)
+
+Remark: a second main.F90 (see main.F90_updated_output) 
+is made available to the user in LOCAL_SOURCES. It is a modified version
+of the template main.F90 that write some output (energy,
+anemometer, etc.) in specific file. Comments are available
+in the Fortran file (see lines 200 till 232).
+
+5) Compile code
+cd BUILD
+cmake ..
+make debug (or make native/make release, see options in variables.cmake)
+
+6) Run simulation
+   6.a) Generate mesh (see online documentation)
+   6.b) Update data file (see online documentation)
+   6.c) Run code using mpirun
+mpirun -np XX EXECUTABLE/a.exe
+

@@ -1,0 +1,7 @@
+.t.
+2  ! nb_sd
+. FEM.rect_in
+1      ! nb of interfaces to keep
+5      ! index of interfaces
+. FEM.rect_ext
+

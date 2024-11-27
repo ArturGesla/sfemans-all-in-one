@@ -1,0 +1,4 @@
+.f. !    .t.= formatted  .f.=unformatted
+'.' 'COLLE.FEM'
+.d0 1.d0 .0d0      ! a,b,c,  where ax+by+c=0 is the equation of symmetry line 
+

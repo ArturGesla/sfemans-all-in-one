@@ -1,0 +1,10 @@
+/home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles/rebuild_cache.dir
+/home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles/edit_cache.dir
+/home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles/native.dir
+/home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles/a.exe.dir
+/home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles/release.dir
+/home/gesla/Documents/git/SFEMaNS/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles/debug.dir
+/home/gesla/Documents/git/SFEMaNS/LIBS/CMakeFiles/rebuild_cache.dir
+/home/gesla/Documents/git/SFEMaNS/LIBS/CMakeFiles/edit_cache.dir
+/home/gesla/Documents/git/SFEMaNS/LIBS/CMakeFiles/sfemans_lib_F.dir
+/home/gesla/Documents/git/SFEMaNS/LIBS/CMakeFiles/sfemans_lib_C.dir

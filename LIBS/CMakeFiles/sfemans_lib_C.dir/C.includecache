@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c
+stdbool.h
+-
+stdint.h
+-
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+zlib.h
+-
+

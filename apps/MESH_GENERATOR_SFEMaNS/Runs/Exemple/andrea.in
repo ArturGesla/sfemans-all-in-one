@@ -1,0 +1,16 @@
+andrea 1
+7
+ellipse 1
+0.5 0.0 11. 10. 360.0 0.0
+data 1
+andrea.klc
+circle 1
+-2. 0. 1.0 0. 360.
+circle 1
+.2 4. 1.0 0. 360.
+line 1
+5 5  5  6
+line 1
+5 6  4 5
+line 1
+4 5  5 5

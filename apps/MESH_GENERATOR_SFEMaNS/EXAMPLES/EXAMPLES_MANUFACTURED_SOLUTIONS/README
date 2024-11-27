@@ -1,0 +1,15 @@
+#name of mesh              		#number of the tests using the mesh
+Mesh_10_form.FEM			test 1, 2, 3, 4, 8, 9, 10, 12, 19, 20, 21
+CYL10_TCM_PERIO_form.FEM     		test 5
+sphere_0.05_form.FEM			test 6, 7
+Mesh_BENCH1_20.FEM			test 11
+Mesh_20_form.FEM			test 13, 25
+VKS_MND_form_10.FEM			test 14
+RECT10_BENCHMARK_CONVECTION_LES.FEM	test 15
+ELL_b0p8_10_form.FEM			test 16
+mesh_17_0.1.FEM				test 17, 22, 27
+mesh_18_0.05.FEM			test 18, 23
+cylinder_0.05.FEM			test 24
+mesh_26_0.03.FEM			test 26
+mesh_T28_0_04_04_ext3.FEM		test 28, 29
+SOLID_FLUID_10.FEM			test 30, 31

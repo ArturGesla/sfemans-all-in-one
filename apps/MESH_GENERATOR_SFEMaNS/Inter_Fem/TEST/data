@@ -1,0 +1,7 @@
+t         ! f (not formatted)
+test      ! Name
+0.d0 0.d0 ! x0
+1.d0 .5d0 ! lx ly 
+10 2     ! nx ny
+1         ! type_id
+1 2 3 4   ! side

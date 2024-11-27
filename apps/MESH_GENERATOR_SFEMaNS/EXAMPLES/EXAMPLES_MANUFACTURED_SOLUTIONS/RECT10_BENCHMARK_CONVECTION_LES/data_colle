@@ -1,0 +1,5 @@
+.true. ! false pr unformatted, true pr formatted
+1  ! nb_sd
+. FEM.rect_in
+#0 ! nb interface a conserver
+#0   ! index de l'interface

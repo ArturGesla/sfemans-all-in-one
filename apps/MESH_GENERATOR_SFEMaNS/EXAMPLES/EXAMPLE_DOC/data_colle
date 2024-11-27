@@ -1,0 +1,6 @@
+.t.    ! .t.= formatted  .f.=unformatted
+2      ! nb of subdomain
+. FEM.rect_in
+2      ! nb of interfaces to keep
+2 3    ! index of interfaces
+. FEM.circle_ext

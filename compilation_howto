@@ -1,0 +1,16 @@
+#procedure
+
+cd CTEST_SUITE
+
+#chage cmake variables
+
+#build sfemans
+rm -r build/*  
+cd build/
+cmake ..
+make -j 
+cd ../..
+
+#build application
+
+

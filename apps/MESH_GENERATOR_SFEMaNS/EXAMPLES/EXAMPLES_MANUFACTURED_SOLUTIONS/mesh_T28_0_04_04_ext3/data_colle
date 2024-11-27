@@ -1,0 +1,27 @@
+.t.
+9  ! nb_sd
+. FEM.bottom
+1      ! nb of interfaces to keep
+5      ! index of interfaces
+. FEM.bbulk
+1      ! nb of interfaces to keep
+6      ! index of interfaces
+. FEM.tbulk
+1      ! nb of interfaces to keep
+7      ! index of interfaces
+. FEM.top
+2      ! nb of interfaces to keep
+5 8      ! index of interfaces
+. FEM.bcorner
+2      ! nb of interfaces to keep
+7 9    ! index of interfaces
+. FEM.tcorner
+1      ! nb of interfaces to keep
+3    ! index of interfaces
+. FEM.out_cyl_1
+1      ! nb of interfaces to keep
+10     ! index of interfaces
+. FEM.out_cyl_2
+1      ! nb of interfaces to keep
+11     ! index of interfaces
+. FEM.out_cyl_3

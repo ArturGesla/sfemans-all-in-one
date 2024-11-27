@@ -1,0 +1,7 @@
+.t.
+2  ! nb_sd
+. FEM.cav
+1      ! nb of interfaces to keep
+2      ! index of interfaces
+. FEM.vac
+
