@@ -1,0 +1,11 @@
+set logscale y;
+#set yrange [1e-20:1e1];
+set xlabel 'time';
+set ylabel '||un||_{L2}';
+set title 'Evolution of the velocity norm mode by mode, Re=70k, mesh me 6374';
+set label " wall time:\n mpirun -n 4" at 5,1e-5;
+plot "norme_comp_u_0" u 1:4 w l ,\
+"norme_comp_u_1" u 1:4 w l,\
+"norme_comp_u_2" u 1:4 w l,\
+"norme_comp_u_3" u 1:4 w l;
+pause -1

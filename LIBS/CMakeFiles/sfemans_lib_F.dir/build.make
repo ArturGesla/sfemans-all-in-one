@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator
+CMAKE_SOURCE_DIR = /home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD
+CMAKE_BINARY_DIR = /home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD
 
 # Include any dependencies generated for this target.
 include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/depend.make
@@ -71,7 +71,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/bessel.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/bessel.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/bessel.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/bessel.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/bessel.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/bessel.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/bessel.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/bessel.F90.i: cmake_force
@@ -84,7 +84,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/chaine_caractere.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/chaine_caractere.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/chaine_caractere.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/chaine_caractere.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/chaine_caractere.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/chaine_caractere.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/chaine_caractere.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/chaine_caractere.F90.i: cmake_force
@@ -97,7 +97,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dir_nodes.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dir_nodes.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dir_nodes.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dir_nodes.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dir_nodes.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dir_nodes.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dir_nodes.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dir_nodes.F90.i: cmake_force
@@ -110,7 +110,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dyn_line.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dyn_line.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dyn_line.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dyn_line.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dyn_line.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dyn_line.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dyn_line.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/dyn_line.F90.i: cmake_force
@@ -123,7 +123,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/sub_plot.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/sub_plot.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/sub_plot.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/sub_plot.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/sub_plot.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/sub_plot.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/sub_plot.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB/sub_plot.F90.i: cmake_force
@@ -136,7 +136,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/associate_gauss.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/associate_gauss.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/associate_gauss.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/associate_gauss.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/associate_gauss.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/associate_gauss.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/associate_gauss.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/associate_gauss.F90.i: cmake_force
@@ -149,7 +149,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_sparsekit.F90.i: cmake_force
@@ -162,7 +162,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_axi.F90.i: cmake_force
@@ -175,7 +175,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/fem_tn_navier_mhd.F90.i: cmake_force
@@ -188,7 +188,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/prep_mesh_interface.F90.i: cmake_force
@@ -201,7 +201,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/type_matrix.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/type_matrix.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/type_matrix.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/type_matrix.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/type_matrix.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/type_matrix.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/type_matrix.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_OBJET/type_matrix.F90.i: cmake_force
@@ -214,7 +214,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/create_communicators.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/create_communicators.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/create_communicators.F90.i: cmake_force
@@ -227,7 +227,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/def_type_mesh.F90.i: cmake_force
@@ -240,7 +240,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/dir_nodes_petsc.F90.i: cmake_force
@@ -253,7 +253,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/fft_parallel.F90.i: cmake_force
@@ -266,7 +266,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/my_util.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/my_util.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/my_util.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/my_util.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/my_util.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/my_util.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/my_util.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/my_util.F90.i: cmake_force
@@ -279,7 +279,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/plot_vtk.F90.i: cmake_force
@@ -292,7 +292,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/prep_mesh.F90.i: cmake_force
@@ -305,7 +305,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/solver.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/solver.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/solver.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/solver.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/solver.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/solver.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/solver.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/solver.F90.i: cmake_force
@@ -318,7 +318,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/st_csr.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/st_csr.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/st_csr.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/st_csr.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/st_csr.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/st_csr.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/st_csr.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/st_csr.F90.i: cmake_force
@@ -331,7 +331,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_PARALLEL/two_dim_metis_distribution.F90.i: cmake_force
@@ -344,7 +344,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/assembling_rhs.F90.i: cmake_force
@@ -357,7 +357,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/computing_rhs_gauss.F90.i: cmake_force
@@ -370,7 +370,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/entropy_viscosity.F90.i: cmake_force
@@ -383,7 +383,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_M_axi.F90.i: cmake_force
@@ -396,7 +396,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fem_rhs_axi.F90.i: cmake_force
@@ -409,7 +409,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/fourier_real.F90.i: cmake_force
@@ -422,7 +422,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/initialization.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/initialization.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/initialization.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/initialization.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/initialization.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/initialization.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/initialization.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/initialization.F90.i: cmake_force
@@ -435,7 +435,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_mxs_with_H.F90.i: cmake_force
@@ -448,7 +448,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_B.F90.i: cmake_force
@@ -461,7 +461,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/maxwell_update_time_with_H.F90.i: cmake_force
@@ -474,7 +474,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/metis_distribution_sfemans.F90.i: cmake_force
@@ -487,7 +487,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/prep_mesh_periodic.F90.i: cmake_force
@@ -500,7 +500,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/read_my_data.F90.i: cmake_force
@@ -513,7 +513,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/restart.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/restart.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/restart.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/restart.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/restart.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/restart.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/restart.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/restart.F90.i: cmake_force
@@ -526,7 +526,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/st_csr_mhd.F90.i: cmake_force
@@ -539,7 +539,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_compute_visc_LES_level.F90.i: cmake_force
@@ -552,7 +552,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_concentration.F90.i: cmake_force
@@ -565,7 +565,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_level_set.F90.i: cmake_force
@@ -578,7 +578,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_mass.F90.i: cmake_force
@@ -591,7 +591,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_maxwell.F90.i: cmake_force
@@ -604,7 +604,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_navier_stokes.F90.i: cmake_force
@@ -617,7 +617,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum.F90.i: cmake_force
@@ -630,7 +630,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_momentum_art_comp.F90.i: cmake_force
@@ -643,7 +643,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_ns_with_velocity.F90.i: cmake_force
@@ -656,7 +656,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_taylor_navier_stokes.F90.i: cmake_force
@@ -669,7 +669,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_T.F90.i: cmake_force
@@ -682,7 +682,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/sub_temperature_with_e.F90.i: cmake_force
@@ -695,7 +695,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/symmetry.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/symmetry.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/symmetry.F90.i: cmake_force
@@ -708,7 +708,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tn_axi.F90.i: cmake_force
@@ -721,7 +721,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tools.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tools.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tools.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tools.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tools.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tools.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tools.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/tools.F90.i: cmake_force
@@ -734,7 +734,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/update_temperature.F90.i: cmake_force
@@ -747,7 +747,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/verbose.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/verbose.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/verbose.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/verbose.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/verbose.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/verbose.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/verbose.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/FEMSUB_SFEMaNS/verbose.F90.i: cmake_force
@@ -760,7 +760,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p1.F90.i: cmake_force
@@ -773,7 +773,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p2.F90.i: cmake_force
@@ -786,7 +786,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/GP_2D_p3.F90.i: cmake_force
@@ -799,7 +799,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/basis_change.F90.i: cmake_force
@@ -812,7 +812,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/GAUSS_POINTS_OBJET/gauss_points_2d.F90.i: cmake_force
@@ -825,7 +825,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/abstract_interface.F90.i: cmake_force
@@ -838,7 +838,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/boundary.F90.i: cmake_force
@@ -851,7 +851,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/condlim_module.F90.i: cmake_force
@@ -864,7 +864,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/interface_for_condlim.F90.i: cmake_force
@@ -877,7 +877,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/post_processing_debug.F90.i: cmake_force
@@ -890,7 +890,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_17.F90.i: cmake_force
@@ -903,7 +903,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_18.F90.i: cmake_force
@@ -916,7 +916,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_22.F90.i: cmake_force
@@ -929,7 +929,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_23.F90.i: cmake_force
@@ -942,7 +942,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_26.F90.i: cmake_force
@@ -955,7 +955,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/MHD_DATA_TEST_CONV_PETSC/test_27.F90.i: cmake_force
@@ -968,7 +968,7 @@ include /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/fla
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.o: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/flags.make
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.o: /home/gesla/git/sfemans-all-in-one/SOURCES/WRITE_BLOCK_MM/write_block_f.F90
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building Fortran object /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.o"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && /usr/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/gesla/git/sfemans-all-in-one/SOURCES/WRITE_BLOCK_MM/write_block_f.F90 -o CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.o
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/home/gesla/git/sfemans-all-in-one/SOURCES/WRITE_BLOCK_MM/write_block_f.F90.i: cmake_force
@@ -1128,7 +1128,7 @@ sfemans_lib_F_EXTERNAL_OBJECTS =
 /home/gesla/git/sfemans-all-in-one/LIBS/libsfemans_lib_F.so: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/build.make
 /home/gesla/git/sfemans-all-in-one/LIBS/libsfemans_lib_F.so: /home/gesla/git/sfemans-all-in-one/LIBS/libsfemans_lib_C.so
 /home/gesla/git/sfemans-all-in-one/LIBS/libsfemans_lib_F.so: /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Linking Fortran shared library libsfemans_lib_F.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Linking Fortran shared library libsfemans_lib_F.so"
 	cd /home/gesla/git/sfemans-all-in-one/LIBS && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sfemans_lib_F.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1140,6 +1140,6 @@ sfemans_lib_F_EXTERNAL_OBJECTS =
 .PHONY : /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/clean
 
 /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/depend:
-	cd /home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator /home/gesla/git/sfemans-all-in-one/LIBS /home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/BUILD /home/gesla/git/sfemans-all-in-one/LIBS /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier /home/gesla/git/sfemans-all-in-one/LIBS /home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/escudier/BUILD /home/gesla/git/sfemans-all-in-one/LIBS /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : /home/gesla/git/sfemans-all-in-one/LIBS/CMakeFiles/sfemans_lib_F.dir/depend
 
