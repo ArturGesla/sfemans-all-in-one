@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "../EXECUTABLE/test26.exe"
-  "../EXECUTABLE/test26.exe.pdb"
+  "/home/gesla/git/sfemans-all-in-one/REGRESSION_SUITE/TEST26/EXECUTABLE/test26.exe"
+  "/home/gesla/git/sfemans-all-in-one/REGRESSION_SUITE/TEST26/EXECUTABLE/test26.exe.pdb"
   "CMakeFiles/test26.exe.dir/LOCAL_SOURCES/condlim.F90.o"
-  "CMakeFiles/test26.exe.dir/home/gesla/sfe2/TEMPLATE/main.F90.o"
-  "CMakeFiles/test26.exe.dir/home/gesla/sfe2/TEMPLATE/read_user_data.F90.o"
+  "CMakeFiles/test26.exe.dir/home/gesla/git/sfemans-all-in-one/TEMPLATE/main.F90.o"
+  "CMakeFiles/test26.exe.dir/home/gesla/git/sfemans-all-in-one/TEMPLATE/read_user_data.F90.o"
 )
 
 # Per-language clean rules from dependency scanning.

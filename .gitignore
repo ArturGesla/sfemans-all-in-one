@@ -1,0 +1,10 @@
+BUILD
+build
+*.vtu
+norme*
+nohup*
+*.pvd
+anemo*
+e_c_*
+fort.*
+vmax*

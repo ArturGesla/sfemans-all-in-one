@@ -1,7 +1,7 @@
 ===Is mesh file formatted (true/false)?
 .f.
 ===Directory and name of mesh file
-'/home/gesla/Documents/git/SFEMaNS/apps/MESH_GENERATOR_SFEMaNS/MESHES/rotor_stator/' 'COLLE.FEM'
+'/home/gesla/git/sfemans-all-in-one/apps/MESH_GENERATOR_SFEMaNS/MESHES/rotor_stator/' 'COLLE.FEM'
 
 'RECT_R1_H0p1_bis.FEM' 'rotor_stator.FEM'
 !==========================================================================

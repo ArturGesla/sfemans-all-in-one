@@ -12,8 +12,8 @@
 
 # Variables to set for Whistler
 #set(SFEMaNS_DIR "/home/guermond/SFEMaNS/GIT_SFEMaNS/SFEMaNS")
-set(SFEMaNS_DIR "/home/gesla/sfe2")
-set(ADDITIONAL_LINKS "-lmetis -lz -L /usr/lib/x86_64-linux-gnu/hdf5/serial")
+set(SFEMaNS_DIR "/home/gesla/git/sfemans-all-in-one")
+set(ADDITIONAL_LINKS "-lmetis -lz -L /usr/lib/x86_64-linux-gnu/hdf5/serial -L /home/gesla/git/petsc-3.15.1/arch-linux-c-opt/lib")
 set(debug_bounds "-Wall -fimplicit-none -fbounds-check")
 set(release_bounds "-O3")
 set(native_bounds "-march=native -mtune=native -Ofast")
@@ -21,3 +21,5 @@ set(RUN_PRE_PROC "srun")
 set(RUN_PRE_PROC "mpirun")
 set(PROC_CALL "-n ")
 set(RUN_POST_PROC "")
+
+set(ENV{PKG_CONFIG_PATH} "/home/gesla/git/petsc-3.15.1/arch-linux-c-opt/lib/pkgconfig")

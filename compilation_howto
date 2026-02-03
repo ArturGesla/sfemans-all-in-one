@@ -1,5 +1,7 @@
 #procedure
 
+#works with petsc 3.15 but not with 3.24 - 3/02/2026 AG
+
 cd CTEST_SUITE
 
 #chage cmake variables

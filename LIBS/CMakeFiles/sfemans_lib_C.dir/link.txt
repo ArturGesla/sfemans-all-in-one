@@ -1,1 +1,1 @@
-/usr/bin/cc -fPIC   -shared -Wl,-soname,libsfemans_lib_C.so -o libsfemans_lib_C.so CMakeFiles/sfemans_lib_C.dir/home/gesla/sfe2/SOURCES/WRITE_BLOCK_MM/write_block_c.c.o 
+/usr/bin/cc -fPIC -shared -Wl,-soname,libsfemans_lib_C.so -o libsfemans_lib_C.so "CMakeFiles/sfemans_lib_C.dir/home/gesla/git/sfemans-all-in-one/SOURCES/WRITE_BLOCK_MM/write_block_c.c.o" 

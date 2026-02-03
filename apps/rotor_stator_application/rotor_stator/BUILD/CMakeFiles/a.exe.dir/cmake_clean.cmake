@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../EXECUTABLE/a.exe"
-  "../EXECUTABLE/a.exe.pdb"
+  "/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/EXECUTABLE/a.exe"
+  "/home/gesla/git/sfemans-all-in-one/apps/rotor_stator_application/rotor_stator/EXECUTABLE/a.exe.pdb"
   "CMakeFiles/a.exe.dir/LOCAL_SOURCES/condlim.F90.o"
   "CMakeFiles/a.exe.dir/LOCAL_SOURCES/main.F90.o"
   "CMakeFiles/a.exe.dir/LOCAL_SOURCES/read_user_data.F90.o"
