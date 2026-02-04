@@ -1,0 +1,5 @@
+.f. !    .t.= formatted  .f.=unformatted
+'.' 'rotor_stat.FEM'     ! directory of the mesh to symmetryze   and  name of the mesh to symmetryze
+0.d0 1.d0 .0d0      ! a,b,c,  where ax+by+c=0 is the equation of symmetry line 
+.t.                 ! keep sides set to true
+
