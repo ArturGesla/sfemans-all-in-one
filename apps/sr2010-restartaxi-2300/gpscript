@@ -1,0 +1,30 @@
+set logscale y;
+#set yrange [1e-20:1e1];
+set key outside;
+set term qt size 1000,500;
+set grid;
+set xlabel 'time';
+set ylabel '||un||_{L2}';
+set xrange [2000:4000];
+set yrange [1e-20:10];
+set title 'Evolution of the velocity norm mode by mode, Swirling jet Susan-Resiga 2010 JFE, Re=2300, restart from m=0 base';
+set label " wall time:\n mpirun -n 4" at 5,1e-5;
+plot "norme_comp_u_0" u 1:4 w l lc rgb "#000000",\
+"norme_comp_u_1" u 1:4 w l lc rgb "#FF0000",\
+"norme_comp_u_2" u 1:4 w l lc rgb "#EE0000",\
+"norme_comp_u_3" u 1:4 w l lc rgb "#DD0000",\
+"norme_comp_u_4" u 1:4 w l lc rgb "#CC0000",\
+"norme_comp_u_5" u 1:4 w l lc rgb "#BB0000",\
+"norme_comp_u_6" u 1:4 w l lc rgb "#AA0000",\
+"norme_comp_u_7" u 1:4 w l lc rgb "#990000",\
+"norme_comp_u_8" u 1:4 w l lc rgb "#880000",\
+"norme_comp_u_9" u 1:4 w l lc rgb "#770000",\
+"norme_comp_u_10" u 1:4 w l lc rgb "#660000",\
+"norme_comp_u_11" u 1:4 w l lc rgb "#550000",\
+"norme_comp_u_12" u 1:4 w l lc rgb "#440000",\
+"norme_comp_u_13" u 1:4 w l lc rgb "#330000",\
+"norme_comp_u_14" u 1:4 w l lc rgb "#220000",\
+"norme_comp_u_15" u 1:4 w l lc rgb "#110000";
+#,\
+#exp(0.036*(x-2000))*1e-17;
+pause -1

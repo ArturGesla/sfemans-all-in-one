@@ -1,0 +1,5 @@
+set grid;
+plot \
+"anemometre_V_0_0" u 1:4 w l, "anemometre_V_0_0" u 1:10 w l, "anemometre_V_0_0" u 1:16 w l \
+;
+pause -1

@@ -1,0 +1,3 @@
+0) . clean.sh
+1) copy a.exe from applications to here
+2) run with mpirun -n 4 ./a.exe
