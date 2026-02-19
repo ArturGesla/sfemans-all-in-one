@@ -167,7 +167,7 @@ CONTAINS
     REAL(KIND=8),                        INTENT(IN)   :: t
     REAL(KIND=8), DIMENSION(SIZE(rr,2))               :: vv
     REAL(KIND=8)                                      :: r,z,psi_b,psi_t
-    REAL(KIND=8)                                      :: u0,u1,u2,om0,om1,om2,r1,r2,a,epsReg,freg,uth,uz1
+    REAL(KIND=8)                                      :: u0,u1,u2,om0,om1,om2,r1,r2,a,epsReg,freg,uth,uz1,regut,tau
     INTEGER                                           :: n
 
     vv=0.0d0
@@ -186,6 +186,18 @@ CONTAINS
     a=1.063
     epsReg=50.0
 
+    tau=50.
+
+    regut=1-0.01**(t/tau)
+
+    !put some rand field on all the modes in the bulk
+       DO n = 1, SIZE(rr,2)
+          r= rr(1,n)
+          z= rr(2,n)
+          IF( z > 0.1 .AND. z < 10. .AND. r < 1.0 ) THEN 
+                vv(n)=rand(n+1)*1.e-6
+          ENDIF
+       END DO
 
 
     IF (TYPE==5 .AND. m==0) THEN
@@ -201,7 +213,7 @@ CONTAINS
                 uth=uth*freg
                 uz1=uz1*freg
                 !vv(n)=1.0*1.0/(z+1.)
-                vv(n)=uz1
+                vv(n)=uz1*regut
           ENDIF
        END DO
     END IF
@@ -219,7 +231,7 @@ CONTAINS
                 uth=uth*freg
                 uz1=uz1*freg
                 !vv(n)=1.0*1.0/(z+1.)
-                vv(n)=uth
+                vv(n)=uth*regut
           ENDIF
 
           IF( r < 0.01 ) THEN 
@@ -227,7 +239,7 @@ CONTAINS
 
                 freg=(2.0/(1.0+exp(epsReg*(r-a)/a))-1.0);
                 uth=uth*freg
-                vv(n)=uth
+                vv(n)=uth*regut
           ENDIF
        END DO
     END IF
