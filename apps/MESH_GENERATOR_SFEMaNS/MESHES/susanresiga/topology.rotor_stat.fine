@@ -1,35 +1,43 @@
 NV      NE
- 4       4
+ 5       5
 
 BEGIN
        E       N      BV      EV
        1       2       1       2
    IDATA   SDATA   HDATA
-       1     0.0    .0005
-       1     1.0    .0005
+       1     0.0    .015
+       1     1.0    .06
 END
 
 BEGIN
        E       N      BV      EV
        2       2       2       3
    IDATA   SDATA   HDATA
-       1    0.0   .0005
-       1    1.0   .0005
+       1    0.0   .06
+       1    1.0   .06
 END
 
 BEGIN
        E       N      BV      EV
        3       2       3       4
    IDATA   SDATA   HDATA
-       1     0.0    .0005
-       1     1.0    .0005
+       1     0.0    .06
+       1     1.0    .015
 END
 
 BEGIN
        E       N      BV      EV
-       4       2       4       1
+       4       2       4       5
    IDATA   SDATA   HDATA
-       1    0.0   .0005
-       1    1.0   .0005
+       1    0.0   .015
+       1    1.0   .015
+END
+
+BEGIN
+       E       N      BV      EV
+       5       2       5       1
+   IDATA   SDATA   HDATA
+       1    0.0   .015
+       1    1.0   .015
 END
 
